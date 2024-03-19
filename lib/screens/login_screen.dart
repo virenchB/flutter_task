@@ -127,7 +127,6 @@ class _LoginScreenState extends State<LoginScreen> {
                }else{
                  loginController.emailBool.value = false;
                  loginController.passwordBool.value = false;
-                 getBusinessesDataAPI();
                  final box = GetStorage();
                  box.write("userEmail", loginController.emailController.text);
                  Get.offAll(()=> const HomeScreen());

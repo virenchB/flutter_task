@@ -5,6 +5,8 @@ import 'package:virench_interview_task/constant/app_colors.dart';
 import 'package:virench_interview_task/controller/businesses_controller.dart';
 import 'package:virench_interview_task/screens/business_detail_screen.dart';
 
+import '../API/get_bussiness_data_api.dart';
+
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
 
@@ -14,6 +16,13 @@ class HomeScreen extends StatefulWidget {
 
 class _HomeScreenState extends State<HomeScreen> {
   BusinessesController businessesController = Get.put(BusinessesController());
+  @override
+  void initState() {
+
+    getBusinessesDataAPI();
+    // TODO: implement initState
+    super.initState();
+  }
   @override
   Widget build(BuildContext context) {
     return  Scaffold(

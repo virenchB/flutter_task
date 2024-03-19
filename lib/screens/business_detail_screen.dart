@@ -61,7 +61,7 @@ class _BusinessDetailScreenState extends State<BusinessDetailScreen> {
                       onTap: (){
                         Get.back();
                       },
-                      child: const Icon(Icons.arrow_back_ios_rounded,color: Colors.black,)),
+                      child: const Icon(Icons.arrow_back_ios_rounded,color: Colors.white,)),
                 ),
                 const Spacer(),
                 Text("Business Name: ${widget.name}",style: const TextStyle(
