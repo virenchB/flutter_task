@@ -1,16 +1,37 @@
-# virench_interview_task
+# flutter_task
 
-A new Flutter project.
+Sample App For Trial Task
 
-## Getting Started
+## Deployment Steps
 
-This project is a starting point for a Flutter application.
+### 1. Generate Release Build
+- Generate a release build of your Flutter app using the following commands:
+  ```bash
+  flutter build apk --release   # For Android
+  flutter build ios --release   # For iOS
+  ```
 
-A few resources to get you started if this is your first Flutter project:
+### 2. Sign Your App (Android)
+- Sign the APK file with a signing key before deploying to the Google Play Store.
+- Follow the official documentation for instructions on signing app: [Signing App | Android Developers](https://developer.android.com/studio/publish/app-signing)
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+### 3. Prepare App Icons and Assets
+- Ensure app icons, splash screens, and other assets are properly configured for deployment.
+- Follow Flutter's guidelines for managing icons and assets.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### 4. Distribute App
+- Android: Upload the signed APK file to the Google Play Console and follow the instructions to publish app on the Google Play Store.
+- iOS: Upload the IPA file to App Store Connect and follow the instructions to submit app for review and publication on the App Store.
+
+### 5. Update Release Notes and Metadata
+- Provide release notes, app descriptions, screenshots, and other metadata as required by the app stores.
+- Update your app's listing with relevant information to attract users and provide transparency about new features or changes.
+
+### 6. Monitor App Performance and Feedback
+- After deployment, monitor your app's performance, user feedback, and crash reports.
+- Use analytics tools to track user engagement, retention, and other key metrics.
+
+### 7. Update and Maintain Your App
+- Continue to update and maintain app by releasing new features, fixing bugs, and responding to user feedback.
+- Regularly test app on different devices and platforms to ensure compatibility and optimal performance.
+
