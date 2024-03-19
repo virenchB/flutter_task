@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:get_storage/get_storage.dart';
+import 'package:virench_interview_task/API/get_bussiness_data_api.dart';
 import 'package:virench_interview_task/controller/login_controller.dart';
 import 'package:virench_interview_task/screens/home_screen.dart';
 
@@ -126,6 +127,7 @@ class _LoginScreenState extends State<LoginScreen> {
                }else{
                  loginController.emailBool.value = false;
                  loginController.passwordBool.value = false;
+                 getBusinessesDataAPI();
                  final box = GetStorage();
                  box.write("userEmail", loginController.emailController.text);
                  Get.offAll(()=> const HomeScreen());
